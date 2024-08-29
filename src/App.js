@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
@@ -11,7 +10,7 @@ import AvatarCustomization from './components/AvatarCustomization';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ayushverse"> {/* Adjust basename to match your repo name */}
       <div className='App'>
         <NavBar />
         <Routes>
